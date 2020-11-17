@@ -8,12 +8,25 @@
     
     <!-- 바벨은 JSX를 자바스크립트로 변환하는 기능이다. -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        #container {
+            padding: 50px;
+            background-color: #EEE;
+        }
+        #container h1 {
+            font-size: 144px;
+            font-family: sans-serif;
+            color: #0080A8;
+        }
+    </style>
 </head>
 <body>
+    <div id="container"></div>
     <script type="text/babel">
+        var container = document.querySelector("#container");
+
         ReactDOM.render(
-            <h1>Sherlock Holmes</h1>,
-            document.body
+            <h1>Batman</h1>, container
         );
     </script>
 </body>
